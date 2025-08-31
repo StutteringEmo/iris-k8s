@@ -38,7 +38,7 @@ docker build -t iris-model:1.0 .
 docker run -p 8000:8000 iris-model:1.0
 ```
 
--- Open http://localhost:8000 in your browser.
+- Open http://localhost:8000 in your browser.
 
 ---
 
