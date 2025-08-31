@@ -58,7 +58,7 @@ if ($oldPath.Split(';') -notcontains 'C:\minikube') {
     [Environment]::SetEnvironmentVariable('Path', "$oldPath;C:\minikube", [EnvironmentVariableTarget]::Machine)
 }
 ```
--- (Reopen PowerShell after this step so minikube is recognized)
+- (Reopen PowerShell after this step so minikube is recognized)
 
 ---
 
