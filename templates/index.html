@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iris Flower Prediction</title>
+</head>
+<body>
+    <h2>Iris Flower Prediction</h2>
+    <form action="/predict" method="post">
+        Sepal_Length: <input type="text" name="Sepal_Length" value="{{ form_vals.Sepal_Length or '' }}"><br>
+        Sepal_Width:  <input type="text" name="Sepal_Width"  value="{{ form_vals.Sepal_Width or '' }}"><br>
+        Petal_Length: <input type="text" name="Petal_Length" value="{{ form_vals.Petal_Length or '' }}"><br>
+        Petal_Width:  <input type="text" name="Petal_Width"  value="{{ form_vals.Petal_Width or '' }}"><br>
+        <input type="submit" value="Submit">
+    </form>
+    <p>My prediction: {{ predict }}</p>
+</body>
+</html>
